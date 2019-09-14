@@ -58,7 +58,8 @@ def plot_value_array(i, predictions_array, true_label):
     plot[predicted_label].set_color('red')
     plot[true_label].set_color('blue')
 
-# Specifiying the used data set and loading the data
+
+# Specifying the used data set and loading the data
 data = keras.datasets.fashion_mnist
 (images_train, labels_train), (images_test, labels_test) = data.load_data()
 
