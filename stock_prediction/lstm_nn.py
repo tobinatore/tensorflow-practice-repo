@@ -87,7 +87,7 @@ if model is None:
 
     model.fit(x=[days_before_train], y=[next_day_train], batch_size=12, epochs=5, verbose=1)
 
-    model.save("LSTM.h5")
+    model.save("LSTM_"+ COMPANY + ".h5")
 
 # Predicting the values
 train_predict = model.predict([days_before_train])
